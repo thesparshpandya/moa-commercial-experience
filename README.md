@@ -96,7 +96,7 @@ moa-commercial-experience/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/moa-commercial-experience.git
+git clone https://github.com/thesparshpandya/moa-commercial-experience.git
 cd moa-commercial-experience
 
 # Install dependencies
