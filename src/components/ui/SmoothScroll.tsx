@@ -27,10 +27,10 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
           touchMultiplier: 2,
         });
 
-        function raf(time: number) {
+        const raf = (time: number) => {
           lenis.raf(time);
           requestAnimationFrame(raf);
-        }
+        };
         requestAnimationFrame(raf);
       } catch (e) {
         // Native scroll fallback — no-op
