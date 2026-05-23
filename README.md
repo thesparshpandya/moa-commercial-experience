@@ -164,16 +164,3 @@ The Sponsorship page includes a **locked pricing section** — enter access code
 - [ ] **Media Kit Generation:** Dynamically generated, personalized PDFs via Puppeteer.
 
 ---
-
-## 📋 Assignment Evaluation Coverage
-
-| Criteria | Implementation |
-|---|---|
-| **Visual & UX Design (30%)** | Premium dark theme, Cormorant Garamond typography, gold accent system, custom cursor, film grain, smooth animations. |
-| **Technical Execution (25%)** | Next.js App Router, TypeScript, Tailwind, Framer Motion, Lenis scroll, Vercel-optimized, modular architecture. |
-| **AI Integration (15%)** | AI-generated copy and personas, AI Concept badges in sponsorship mockups, documented LLM workflow. |
-| **Storytelling (15%)** | Clear narrative arc: scale → retail → luxury → attractions → events → sponsorship → CTA. |
-| **Expandability (10%)** | Modular sections, isolated route modules (`/leasing`, `/sponsorship`, `/events`), JSON-driven data layer. |
-| **Attention to Detail (5%)** | Label-tag system, gold gradient highlights, animated viewport counters, scroll progress bar, floating side nav, gated content. |
-
----
