@@ -1,0 +1,131 @@
+{
+  "name": "Mall of America",
+  "tagline": "Where Brands Become Destinations",
+  "subTagline": "A Global Platform. 40 Million Stories Per Year.",
+  "location": "Bloomington, Minnesota — 20 Min from Minneapolis",
+  "opened": 1992,
+  "stats": [
+    { "value": "40M", "label": "Annual Visitors", "note": "More than Disney World + Grand Canyon combined" },
+    { "value": "5.6M", "label": "Square Feet", "note": "Largest entertainment complex in North America" },
+    { "value": "500+", "label": "Stores & Venues", "note": "Retail, dining, entertainment under one roof" },
+    { "value": "4.3h", "label": "Avg Dwell Time", "note": "4× the industry standard" },
+    { "value": "40%", "label": "Out-of-State Visitors", "note": "International & tourism-heavy audience" },
+    { "value": "$2B+", "label": "Economic Impact", "note": "Annual regional economic contribution" }
+  ],
+  "keyTenants": [
+    "Apple", "Nike", "Nordstrom", "Macy's", "Lego", "Sephora",
+    "Zara", "H&M", "Tommy Hilfiger", "Coach", "Michael Kors", "Vans",
+    "Banana Republic", "Express", "Victoria's Secret", "Pandora",
+    "Guess", "American Eagle", "Abercrombie & Fitch", "Hollister"
+  ],
+  "leasingTiers": [
+    {
+      "id": "luxury",
+      "title": "Luxury & Flagship",
+      "description": "Permanent flagship placement in high-traffic premium wings with white-glove concierge access and dedicated valet zones.",
+      "sqft": "2,000–25,000 sq ft",
+      "traffic": "12M+ premium-demographic visitors annually",
+      "examples": ["Designer Boutiques", "Luxury Flagships", "Premium Experiential Retail"]
+    },
+    {
+      "id": "midtier",
+      "title": "Mid-Tier Retail",
+      "description": "High-visibility inline and anchor positions with optimal cross-traffic from entertainment zones and food halls.",
+      "sqft": "1,000–10,000 sq ft",
+      "traffic": "32M+ annual visitors",
+      "examples": ["Apparel", "Electronics", "Lifestyle Brands"]
+    },
+    {
+      "id": "popup",
+      "title": "Pop-Up & Seasonal",
+      "description": "Flexible short-term activations in the Rotunda, atrium spaces, and specialty kiosks. Perfect for product launches and brand moments.",
+      "sqft": "200–5,000 sq ft",
+      "traffic": "Weekend peaks of 150,000+ visitors",
+      "examples": ["Brand Activations", "Limited Editions", "DTC Moments"]
+    },
+    {
+      "id": "fnb",
+      "title": "Food & Beverage",
+      "description": "Full-service restaurants, fast casual, kiosks, and the Culinary District — a dedicated dining destination drawing visitors independently.",
+      "sqft": "500–8,000 sq ft",
+      "traffic": "8M+ dedicated F&B visits annually",
+      "examples": ["Fine Dining", "Fast Casual", "Experiential F&B"]
+    }
+  ],
+  "sponsorshipTiers": [
+    {
+      "tier": "Destination Partner",
+      "investment": "$5M+/year",
+      "description": "Naming rights, permanent experiential installations, and full-spectrum brand integration across the property.",
+      "includes": ["Naming Rights (zones/attractions)", "Permanent Activation Space", "Digital Network Dominance", "Exclusive Brand Category", "Annual Events Program"]
+    },
+    {
+      "tier": "Seasonal Campaign",
+      "investment": "$500K–$2M",
+      "description": "Seasonal takeovers, holiday campaigns, and pop-up zones timed to peak traffic moments.",
+      "includes": ["Seasonal Zone Branding", "LED Screen Takeovers", "Event Co-Branding", "Social Amplification", "PR Integration"]
+    },
+    {
+      "tier": "Digital Media",
+      "investment": "$50K–$500K",
+      "description": "Mall-wide LED network and digital touchpoints reaching every visitor across 5.6M sq ft.",
+      "includes": ["Digital Signage Network", "Wayfinding Integration", "App Partnership", "Audience Data Reports"]
+    }
+  ],
+  "eventSpaces": [
+    {
+      "name": "The Rotunda",
+      "capacity": "10,000+",
+      "description": "The iconic 7-story central atrium — the most recognizable indoor event space in the Midwest. Visible from all levels, architecturally stunning, and purpose-built for spectacle.",
+      "useCases": ["Product Launches", "Celebrity Appearances", "Concerts", "Fashion Shows", "Brand Activations"]
+    },
+    {
+      "name": "Huntington Bank Stadium Club",
+      "capacity": "2,500",
+      "description": "Premium event space with luxury finishes, full AV infrastructure, and direct mall access for curated brand experiences.",
+      "useCases": ["Corporate Events", "VIP Launches", "Gala Dinners", "Press Events"]
+    },
+    {
+      "name": "Parkview Meeting Spaces",
+      "capacity": "500–3,000",
+      "description": "Flexible meeting rooms and event suites overlooking Nickelodeon Universe — a one-of-a-kind backdrop for memorable corporate events.",
+      "useCases": ["Conferences", "Trade Shows", "Team Events", "Partner Summits"]
+    },
+    {
+      "name": "Nickelodeon Universe",
+      "capacity": "Buyout Available",
+      "description": "7-acre indoor theme park — the largest in the US — available for exclusive buyout events, creating unparalleled wow moments for guests.",
+      "useCases": ["Exclusive Buyouts", "Family Events", "Influencer Campaigns", "Media Days"]
+    }
+  ],
+  "pastEvents": [
+    { "name": "Nickelodeon Universe Grand Prix", "type": "Entertainment", "attendance": "25,000" },
+    { "name": "Taylor Swift Meet & Greet", "type": "Celebrity", "attendance": "8,000" },
+    { "name": "NBA All-Star Weekend Activation", "type": "Sports", "attendance": "40,000" },
+    { "name": "New Year's Eve Countdown", "type": "Festival", "attendance": "50,000" },
+    { "name": "LEGO World Championship", "type": "Esports/Competition", "attendance": "15,000" },
+    { "name": "Major Brand Launch Events", "type": "Corporate", "attendance": "5,000–20,000" }
+  ],
+  "attractions": [
+    {
+      "name": "Nickelodeon Universe",
+      "description": "7-acre indoor theme park. 30+ rides. The nation's largest indoor entertainment venue — a destination-within-the-destination.",
+      "icon": "🎢"
+    },
+    {
+      "name": "SEA LIFE Minnesota",
+      "description": "Immersive aquarium experience with 10,000+ sea creatures and a 300ft underwater tunnel.",
+      "icon": "🦈"
+    },
+    {
+      "name": "FlyOver America",
+      "description": "Cinematic ride experience that simulates flight over iconic American landscapes. 5-star rated attraction.",
+      "icon": "✈️"
+    },
+    {
+      "name": "Crayola Experience",
+      "description": "Interactive creative playground spanning 70,000 sq ft — the largest Crayola attraction in the world.",
+      "icon": "🎨"
+    }
+  ]
+}
