@@ -211,5 +211,3 @@ Built for the Liat AI interview assignment.
 Submitted to: medi@liat.ai
 
 ---
-
-*"Make someone say: I want to be part of this."*
