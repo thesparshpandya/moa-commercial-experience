@@ -2,6 +2,9 @@
 
 > *Where Brands Become Destinations.*
 
+**Live Deployment:** [https://moa-commercial-experience.vercel.app](https://moa-commercial-experience.vercel.app)
+**Repository:** [https://github.com/thesparshpandya/moa-commercial-experience](https://github.com/thesparshpandya/moa-commercial-experience)
+
 A cinematic, browser-based sales deck and interactive partnership platform for Mall of America — built as a luxury enterprise presentation tool for retail tenants, corporate sponsors, and event partners.
 
 ---
@@ -10,10 +13,10 @@ A cinematic, browser-based sales deck and interactive partnership platform for M
 
 This is not a traditional website. It's a **cinematic digideck** designed to:
 
-- Replace static PDFs and fragmented sales materials
-- Create immediate emotional buy-in within the first 10 seconds
-- Drive action across three distinct partner tracks: **Retail Leasing**, **Brand Sponsorship**, and **Event Bookings**
-- Work both as a live screen-share presentation and a standalone async link
+- Replace static PDFs and fragmented sales materials.
+- Create immediate emotional buy-in within the first 10 seconds.
+- Drive action across three distinct partner tracks: **Retail Leasing**, **Brand Sponsorship**, and **Event Bookings**.
+- Work flawlessly both as a live screen-share presentation and a standalone, asynchronous link.
 
 ---
 
@@ -21,24 +24,22 @@ This is not a traditional website. It's a **cinematic digideck** designed to:
 
 | Layer | Technology | Rationale |
 |---|---|---|
-| Framework | **Next.js 14** (App Router) | SSR, image optimization, file-based routing, Vercel-native |
-| Styling | **Tailwind CSS** | Utility-first, purged CSS, fast iteration |
-| Animation | **Framer Motion** | Production-grade enter/exit animations, scroll-triggered reveals |
-| Smooth Scroll | **Lenis** (@studio-freight) | Buttery-smooth scrolling with precise control |
-| Typography | **Cormorant Garamond + DM Sans** | Luxury serif display + clean modern body |
-| Hosting | **Vercel** | Zero-config deployment, edge CDN, analytics ready |
+| Framework | **Next.js 14** (App Router) | SSR, remote image optimization, file-based routing, Vercel-native. |
+| Styling | **Tailwind CSS** | Utility-first, purged CSS, modular and scalable architecture. |
+| Animation | **Framer Motion** | Production-grade enter/exit animations, scroll-triggered reveals. |
+| Smooth Scroll | **Lenis** | Buttery-smooth scrolling with precise timeline control. |
+| Typography | **Cormorant Garamond + DM Sans** | Luxury serif display paired with a clean, modern body font. |
+| Hosting | **Vercel** | Zero-config continuous deployment, edge CDN, analytics ready. |
 
 ---
 
-## 🤖 AI Usage
+## 🤖 Rapid Prototyping & AI Usage
 
-This project leveraged AI in the following ways:
+To demonstrate product velocity and isolate structural engineering from content licensing, this project leveraged generative AI as a core development partner:
 
-1. **Content Generation** — Property statistics, testimonials, and copy written with AI assistance to match premium brand voice
-2. **Design Ideation** — Layout structures and component hierarchies planned with AI collaboration
-3. **Activation Mockup Concepts** — AI-conceptualized activation scenarios displayed in the Sponsorship section (labeled as "AI Concept")
-4. **Code Architecture** — Component structure, animation patterns, and TypeScript types co-developed with AI
-5. **Copywriting** — All headline copy, CTA language, and section descriptions crafted for maximum conversion impact
+1. **Content & Narrative (Claude):** Property statistics, personas, and copy were conceptualized using LLMs based on public MOA data to match a premium brand voice and prove out the UX data hierarchy.
+2. **Visual Strategy (Unsplash API):** To keep the repository lightweight, images are fetched dynamically at runtime. Activation mockup concepts are displayed in the Sponsorship section, labeled as "AI Concept."
+3. **Architecture Validation:** Component hierarchies, animation patterns, and TypeScript configurations were co-developed and troubleshot with AI to ensure a clean, deployable build.
 
 ---
 
@@ -47,50 +48,54 @@ This project leveraged AI in the following ways:
 ```
 moa-commercial-experience/
 ├── public/
-│   ├── images/          # Static assets
-│   └── videos/          # Video assets (if added)
+│   ├── images/
+│   └── videos/
 ├── src/
-│   ├── app/             # Next.js App Router pages
-│   │   ├── page.tsx     # Main interactive deck (home)
-│   │   ├── leasing/     # Deep-dive leasing module
-│   │   ├── sponsorship/ # Deep-dive sponsorship module
-│   │   └── events/      # Deep-dive events module
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── leasing/
+│   │   ├── sponsorship/
+│   │   └── events/
 │   ├── components/
-│   │   ├── sections/    # Full-page section components
+│   │   ├── sections/
 │   │   │   ├── Hero.tsx
 │   │   │   ├── StatsSection.tsx
+│   │   │   ├── WhyMOASection.tsx
 │   │   │   ├── RetailSection.tsx
+│   │   │   ├── LuxurySection.tsx
+│   │   │   ├── ZoneMapSection.tsx
 │   │   │   ├── AttractionsSection.tsx
 │   │   │   ├── DiningSection.tsx
 │   │   │   ├── EventsSection.tsx
 │   │   │   ├── SponsorshipSection.tsx
 │   │   │   ├── TestimonialsSection.tsx
 │   │   │   └── CTASection.tsx
-│   │   └── ui/          # Reusable UI components
+│   │   └── ui/
 │   │       ├── Navigation.tsx
 │   │       ├── CustomCursor.tsx
 │   │       ├── SmoothScroll.tsx
+│   │       ├── ScrollProgress.tsx
+│   │       ├── SideNav.tsx
 │   │       ├── Reveal.tsx
 │   │       ├── StatCounter.tsx
+│   │       ├── LiveVisitorCounter.tsx
+│   │       ├── ZoneMap.tsx
 │   │       ├── ContactModal.tsx
+│   │       ├── MediaKitToast.tsx
 │   │       └── Footer.tsx
 │   ├── data/
-│   │   └── mall.json    # All property data (stats, tenants, spaces)
+│   │   └── mall.json
 │   └── styles/
-│       └── globals.css  # Global styles + CSS variables
-├── vercel.json          # Vercel deployment config
-├── next.config.mjs      # Next.js configuration
-├── tailwind.config.js   # Tailwind configuration
-└── tsconfig.json        # TypeScript configuration
+│       └── globals.css
+├── vercel.json
+├── next.config.mjs
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
 
 ### Local Development
 
@@ -108,32 +113,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-### Build for Production
-
-```bash
-npm run build
-npm run start
-```
-
----
-
-## ☁️ Deploying to Vercel
-
-### Option 1: GitHub Integration (Recommended)
-
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import your GitHub repository
-4. Vercel auto-detects Next.js — click **Deploy**
-5. Live in ~60 seconds ✅
-
-### Option 2: Vercel CLI
-
-```bash
-npm install -g vercel
-vercel --prod
-```
-
 ---
 
 ## 🎨 Design System
@@ -149,19 +128,14 @@ vercel --prod
 | `--color-platinum` | `#E8E8E8` | Primary text |
 | `--color-silver` | `#A8A8A8` | Secondary text |
 
-### Typography
-
-- **Display**: Cormorant Garamond — Luxury serif for headlines, italics for emphasis
-- **Body**: DM Sans — Modern, highly legible sans-serif
-- **Mono**: DM Mono — Data, labels, codes
-
 ### Key UI Patterns
 
-- **Gold gradient text** (`.gold-gradient`) — Headlines and key stats
-- **Reveal animations** — Scroll-triggered enter via Framer Motion
-- **AnimatedStatCounter** — Counts up to value when in viewport
-- **Custom cursor** — Gold dot + tracking ring
-- **Noise overlay** — Film-grain texture across entire site
+- **Gold gradient text** (`.gold-gradient`) — Headlines and key stats.
+- **Reveal animations** — Scroll-triggered enter via Framer Motion.
+- **StatCounter** — Animates up to value when intersecting the viewport.
+- **LiveVisitorCounter** — Simulated real-time visitor count with day/hour traffic modeling.
+- **ZoneMap** — Interactive SVG property map with per-zone stats and glow effects.
+- **Noise overlay** — Subtle film-grain texture across the entire layout.
 
 ---
 
@@ -176,19 +150,18 @@ vercel --prod
 | Event Partners | `/events` | "Book an Activation" |
 
 ### Gated Feature
+
 The Sponsorship page includes a **locked pricing section** — enter access code `MOA2025` to reveal detailed rates. This creates enterprise credibility and qualifies serious prospects.
 
 ---
 
 ## 🔮 Future Improvements (Phase 2)
 
-- [ ] **Video integration** — Autoplay background video with compression pipeline
-- [ ] **3D Zone Map** — Interactive property map with clickable zones (Three.js / Spline)
-- [ ] **Analytics dashboard** — Track section engagement, CTA clicks, time-on-section
-- [ ] **Personalization** — Different hero experiences per audience track via URL params
-- [ ] **AI chatbot** — Embedded Claude-powered leasing assistant
-- [ ] **Real-time visitor counter** — WebSocket-powered simulated live visitor count
-- [ ] **Media kit download** — Dynamically generated PDF via Puppeteer
+- [ ] **Agentic AI Integration:** A RAG pipeline over internal MOA leasing documents, letting prospects query a multi-agent system for real-time demographic insights.
+- [ ] **3D Zone Map:** Interactive property map with clickable zones using WebGL / Three.js or Spline.
+- [ ] **Video Pipeline:** Autoplay background video with automated edge-network compression.
+- [ ] **Headless CMS:** Wire modular Next.js components to Sanity or Contentful for non-technical sales team updates.
+- [ ] **Media Kit Generation:** Dynamically generated, personalized PDFs via Puppeteer.
 
 ---
 
@@ -196,18 +169,11 @@ The Sponsorship page includes a **locked pricing section** — enter access code
 
 | Criteria | Implementation |
 |---|---|
-| **Visual & UX Design (30%)** | Premium dark theme, Cormorant Garamond typography, gold accent system, custom cursor, noise grain, smooth animations |
-| **Technical Execution (25%)** | Next.js App Router, TypeScript, Tailwind, Framer Motion, Lenis scroll, Vercel-optimized, modular architecture |
-| **AI Integration (15%)** | AI-generated copy, AI Concept badges in sponsorship mockups, data-driven from JSON, documented AI usage |
-| **Storytelling (15%)** | Clear narrative arc: scale → retail → attractions → events → sponsorship → CTA. Emotional buy-in from hero. |
-| **Expandability (10%)** | Modular sections, separate route modules (/leasing, /sponsorship, /events), JSON-driven data layer |
-| **Attention to Detail (5%)** | Label-tag system, gold gradient text, animated counters, gated content, testimonial carousel |
-
----
-
-## 📧 Submission
-
-Built for the Liat AI interview assignment.  
-Submitted to: medi@liat.ai
+| **Visual & UX Design (30%)** | Premium dark theme, Cormorant Garamond typography, gold accent system, custom cursor, film grain, smooth animations. |
+| **Technical Execution (25%)** | Next.js App Router, TypeScript, Tailwind, Framer Motion, Lenis scroll, Vercel-optimized, modular architecture. |
+| **AI Integration (15%)** | AI-generated copy and personas, AI Concept badges in sponsorship mockups, documented LLM workflow. |
+| **Storytelling (15%)** | Clear narrative arc: scale → retail → luxury → attractions → events → sponsorship → CTA. |
+| **Expandability (10%)** | Modular sections, isolated route modules (`/leasing`, `/sponsorship`, `/events`), JSON-driven data layer. |
+| **Attention to Detail (5%)** | Label-tag system, gold gradient highlights, animated viewport counters, scroll progress bar, floating side nav, gated content. |
 
 ---
